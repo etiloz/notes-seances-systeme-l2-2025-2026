@@ -3,9 +3,11 @@
 # et qui lance la commande cmd arg1 .. argn, signale une éventuelle erreur lors du 
 # lancement, attend la fin de l’exécution et précise par un message le résultat (succès ou échec).
 
+# sys.argv = ["verifier.py", "cmd", "arg1", ... , "argn"]
+
 import os, sys
-cmd = sys.argv[1]
-args = sys.argv[1:]
+cmd = sys.argv[1]  # "cmd"
+args = sys.argv[1:] # ["cmd", "arg1", ... , "argn"]
 
 if os.fork() == 0:
     # le fils exécute la commande
