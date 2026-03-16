@@ -1,0 +1,22 @@
+total 72
+-rw-r--r--  1 lozes  staff     7  9 mars  15:02 a.out
+-rw-r--r--  1 lozes  staff   276  9 mars  15:08 exemple-redirection.py
+-rw-r--r--  1 lozes  staff   233  9 mars  14:47 exemple-write.py
+-rw-r--r--  1 lozes  staff   276 16 mars  10:30 exo-redirection.py
+-rw-r--r--  1 lozes  staff  1714  9 mars  14:34 exo1.py
+-rw-r--r--  1 lozes  staff     0 16 mars  10:39 ls.out
+-rw-r--r--  1 lozes  staff   577  9 mars  17:28 nohup.py
+-rw-r--r--  1 lozes  staff     6  9 mars  14:31 titi.txt
+-rw-r--r--  1 lozes  staff     6  9 mars  14:47 toto.out
+-rw-------  1 lozes  staff    10  9 mars  14:51 tutu.txt
+total 80
+-rw-r--r--  1 lozes  staff     7  9 mars  15:02 a.out
+-rw-r--r--  1 lozes  staff   276  9 mars  15:08 exemple-redirection.py
+-rw-r--r--  1 lozes  staff   233  9 mars  14:47 exemple-write.py
+-rw-r--r--  1 lozes  staff   276 16 mars  10:30 exo-redirection.py
+-rw-r--r--  1 lozes  staff  1714  9 mars  14:34 exo1.py
+-rw-r--r--  1 lozes  staff   605 16 mars  10:39 ls.out
+-rw-r--r--  1 lozes  staff   577  9 mars  17:28 nohup.py
+-rw-r--r--  1 lozes  staff     6  9 mars  14:31 titi.txt
+-rw-r--r--  1 lozes  staff     6  9 mars  14:47 toto.out
+-rw-------  1 lozes  staff    10  9 mars  14:51 tutu.txt
