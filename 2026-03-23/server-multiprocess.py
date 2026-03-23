@@ -1,0 +1,22 @@
+import socket, os, sys
+HOST = "127.0.0.1" # or 'localhost' or '' - Standard loopback interface address
+PORT = 2000 # Port to listen on (non-privileged ports are > 1023)
+MAXBYTES = 4096
+# create socket
+with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as serversocket:
+    # AF_INET: IPv4
+    # SOCK_STREAM: TCP
+    serversocket.bind((HOST, PORT)) # bind this socket to specific port on host
+    serversocket.listen() # make the socket a listening one
+    while True:
+        (clientsocket,(addr,port)) = serversocket.accept() # blocking; returns if a client connects.
+        print(f"{addr=}, {port=}")
+        if os.fork() == 0: # child process
+            with clientsocket:
+                print(f"Connected by application: {port} on machine: {addr}")
+                data = clientsocket.recv(MAXBYTES)
+                while len(data) > 0: # otherwise means a disconnection from the client side.
+                    clientsocket.sendall(data)
+                    print("recu:", data)
+                    data = clientsocket.recv(MAXBYTES)
+            sys.exit(0) # child process terminates here; parent process continues to accept new connections.

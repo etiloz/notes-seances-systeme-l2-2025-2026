@@ -7,10 +7,7 @@ print("tubes ouverts")
 MAXBYTES = 1024
 
 
-while True:
-
-
-    
+while True:    
     byts = os.read(fd_r, MAXBYTES) # réception
     if not byts:
         break

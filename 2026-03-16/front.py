@@ -11,6 +11,7 @@ while True:
     print("> ", end="", flush=True)
     byts = os.read(0, MAXBYTES)
     os.write(fd_w, byts) # envoi
+    os.read(fd_r, MAXBYTES)  # réception
 
 
 

@@ -1,0 +1,1 @@
+Ecrire un client et un serveur qui lisent leur entrée standard et l'envoi à l'autre. Quand ils recoivent des données de l'autre, ils les affichent sur la sortie standard.
